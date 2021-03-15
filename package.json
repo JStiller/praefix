@@ -1,0 +1,16 @@
+{
+  "name": "praefix",
+  "version": "1.0.0",
+  "description": "A small utility to get the prefix vendor function if needed.",
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=tests/support/jasmine.json"
+  },
+  "author": "José Stiller",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.6.6",
+    "jasmine": "^3.6.4",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
