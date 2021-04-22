@@ -1,25 +1,27 @@
 # Praefix
-A small utility to get the prefix vendor function if needed.
 
-## Technologies
+A small utility to get the prefixed vendor function if needed.
 
-- typescript
-- jasmine
+![GitHub](https://img.shields.io/github/license/jstiller/praefix?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/jstiller/praefix?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/jstiller/praefix?style=for-the-badge)
 
 ## Sources
 
-- https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
+If you wan to get more information about vendor prefixes, look up [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix).
 
-## install
+## Install
 
+```shell
 npm install @jstiller/praefix
+```
 
-## How to use
+## Usage
 
 ```ts
-import getVendorFunction from praefix
+import praefix from "praefix"
 
-const requestAnimationFrameFunction = getVendorFunction("requestAnimationFrame", window);
+const requestAnimationFrameFunction = praefix("requestAnimationFrame", window);
 ```
 
 it's equal to the following
