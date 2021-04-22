@@ -1,14 +1,16 @@
 {
-  "include": ["src/**/*.ts", "tests/**/*.ts"],
-  "exclude": ["node_modules"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"],
   "typeAcquisition": {
     "disableFilenameBasedTypeAcquisition": true
   },
   "compilerOptions": {
-    "target": "ESNext",
+    "declaration": true,
+    "lib": ["ESNext", "DOM"],
     "module": "CommonJS",
+    "outDir": "dist",
     "sourceMap": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "target": "ESNext",
 
     "strict": true,
     "strictNullChecks": false,
@@ -17,10 +19,6 @@
     "baseUrl": ".",
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "paths": {
-      "@/*": ["src/*"]
-    },
-    "outDir": "dist",
 
     "experimentalDecorators": true,
   }

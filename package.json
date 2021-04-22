@@ -1,16 +1,52 @@
 {
-  "name": "praefix",
+  "name": "@jstiller/praefix",
   "version": "1.0.0",
   "description": "A small utility to get the prefix vendor function if needed.",
+  "main": "dist/praefix.js",
+  "types": "dist/praefix.d.ts",
   "scripts": {
-    "test": "ts-node node_modules/jasmine/bin/jasmine --config=tests/support/jasmine.json"
+    "compile": "tsc --version && tsc",
+    "lint": "",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=tests/support/jasmine.json",
+    "clean": "",
+    "prepublish": "npm run compile"
   },
-  "author": "José Stiller",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JStiller/praefix.git"
+  },
+  "keywords": [
+    "utility",
+    "prefix",
+    "vendor",
+    "ts",
+    "typescript"
+  ],
+  "author": {
+    "name": "José Stiller",
+    "email": "info@josestiller.de",
+    "url": "https://github.com/JStiller/praefix"
+  },
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JStiller/praefix/issues"
+  },
+  "homepage": "https://github.com/JStiller/praefix#readme",
   "devDependencies": {
     "@types/jasmine": "^3.6.6",
     "jasmine": "^3.6.4",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.3"
-  }
+  },
+  "peerDependencies": {
+    "typescript": ">= 3.8"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
